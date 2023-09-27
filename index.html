@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <title>🕹️ Tic Tac Toe</title>
+</head>
+
+<body>
+    <div id="title">
+        <p>Tic-Tac-Toe</p>
+    </div>
+    <div id="game-board"></div>
+    <div id="scoreboard"></div>
+
+    <dialog id="dialog">
+        <form id="form">
+            <fieldset>
+                <legend>Choose player</legend>
+
+                <input type="radio" id="o" name="player" value="x" checked />
+                <label for="x">&#127773;</label><br />
+
+                <input type="radio" id="x" name="player" value="o" />
+                <label for="o">&#127770;</label><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Do you want to go first?</legend>
+
+                <input type="radio" id="yes" name="order" value="1" checked />
+                <label for="yes">Yes</label><br />
+
+                <input type="radio" id="no" name="order" value="2" />
+                <label for="no">No, I want to go second</label><br />
+            </fieldset>
+
+            <div class="submit">
+                <button type="submit" id="play">Play!</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+
+<script src="script.js"></script>
+
+</html>
