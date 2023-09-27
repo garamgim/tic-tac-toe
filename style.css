@@ -5,16 +5,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E2C2B9;
+    background-color: #383051;
     font-family: 'Chakra Petch', sans-serif;
 }
 
 div#title>p {
-    color: #7c8c77;
+    font-family: 'Spline Sans Mono', monospace;
+    color: #ffff86;
     font-weight: 700;
     font-size: 50px;
-    margin: 20px 0;
-    text-shadow: 2px 2px 1px grey;
+    margin: 30px 0;
 }
 
 div#game-board {
@@ -22,19 +22,23 @@ div#game-board {
     width: 500px;
     height: 500px;
     grid-template-columns: 1fr 1fr 1fr;
-    border: solid 1px rgb(195, 195, 195);
-    background-color: #E7EAB5;
+    background-color: #d7cbff;
+    box-shadow: 0 0 10px 8px #d7cbff;
 }
 
-div.cell {
-    border: solid 1px rgb(195, 195, 195);
-}
-
-button.cell-button {
+.cell-button {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border: none;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 0;
+    border: none;
+}
+
+div.cell {
+    background-color: #b098ff;
+}
+
+div.cell:nth-child(2n) {
+    background-color: #cac6da;
 }
