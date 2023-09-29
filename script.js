@@ -211,14 +211,10 @@ const starter = (() => {
         you.marker = document.querySelector('input[name="player"]:checked').value;
         computer.marker = (you.marker === 'x' ? 'o' : 'x');
 
-        // Setting play order
-        order = document.querySelector('input[name="order"]:checked').value;
-
         dialog.close();
     })
 
     return {
-        order
     }
 
 })();
