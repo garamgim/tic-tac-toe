@@ -30,7 +30,7 @@ div#game-board {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 0;
     border: none;
 }
@@ -41,4 +41,13 @@ div.cell {
 
 div.cell:nth-child(2n) {
     background-color: #cac6da;
+}
+
+div#score-board {
+    padding: 30px;
+}
+
+p#scoreboard {
+    font-size: 30px;
+    color: #ffff86;
 }

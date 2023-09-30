@@ -71,9 +71,15 @@ const displayController = (() => {
 
     }
 
+    const scoreBoardUpdate = (winner) => {
+        const scoreBoard = document.getElementById('scoreboard');
+        scoreBoard.innerHTML = `${winner} won!`
+    }
+
     return {
         gameArray,
-        markCell
+        markCell,
+        scoreBoardUpdate
     }
 
 })();
@@ -168,10 +174,10 @@ const gameController = (() => {
 
         // finish game if winning status detected
         if (horizontalWin(you.marker) || verticalWin(you.marker) || diagonalWin(you.marker)) {
-            console.log("You won!");
+            displayController.scoreBoardUpdate(you.name);
             finishGame();
         } else if (horizontalWin(computer.marker) || verticalWin(computer.marker) || diagonalWin(computer.marker)) {
-            console.log("Computer won...");
+            displayController.scoreBoardUpdate(computer.name);
             finishGame();
         }
     }
